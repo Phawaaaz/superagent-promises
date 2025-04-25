@@ -41,15 +41,15 @@ readFilePro(`${__dirname}/dog.txt`)
     return console.log(err.message);
   });
 
-    .end((err, res) => {
-      if (err) return console.log(err.message);
-      console.log(res.body);
-      fs.writeFile(
-        'dog.img.txt',
-        `${res.body.message[0]}\n`,
-        (err) => {
-          console.log('picking the the first element');
-        }
-      );
-    });
-});
+//     .end((err, res) => {
+//       if (err) return console.log(err.message);
+//       console.log(res.body);
+//       fs.writeFile(
+//         'dog.img.txt',
+//         `${res.body.message[0]}\n`,
+//         (err) => {
+//           console.log('picking the the first element');
+//         }
+//       );
+//     });
+// });
